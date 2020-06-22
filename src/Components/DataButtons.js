@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import DataFormat from './DataFormat'
-import DataCard from "./DataFormat";
 
 
-function dataCard(){
+
+function DataButtons(){
   return(
     <div>
       {DataFormat}
@@ -11,4 +11,4 @@ function dataCard(){
   )
 }
 
-export default DataCard;
+export default DataButtons;

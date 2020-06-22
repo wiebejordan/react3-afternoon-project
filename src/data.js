@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    name: "Waylin Lumsdon",
+    name: { first: "Phoebe", last: "Wiebe" },
     city: "Likiep",
     country: "Marshall Islands",
     employer: "Twinder",

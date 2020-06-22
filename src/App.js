@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DataFormat from './Components/DataFormat';
-import DataCard from './Components/DataCard';
+import DataButtons from './Components/DataButtons';
 import data from './data';
 import './App.css';
 
@@ -11,9 +11,6 @@ class App extends Component{
   constructor(props){
     super(props);
 
-    this.state = {
-      
-    }
   }
 
   render(){
@@ -26,12 +23,12 @@ class App extends Component{
 
         <div className='body'>
           <div className='card'>
-            <DataCard/>
+            <DataFormat/>
             
           </div>
           <div className='Buttons'>
-          <button>{'<'} Previous</button>
-          <button>Next {'>'}</button>
+          <button onClick={this.handleDecrement}>{'<'} Previous</button>
+          <button onClick={this.handleIncrement}>Next {'>'}</button>
           </div>
           
 

@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import DataFormat from './Components/DataFormat';
+import DataCard from './Components/DataCard';
+import data from './data';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+
+
+class App extends Component{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      
+    }
+  }
+
+  render(){
+    return(
+      <div className='Main'>
+        <header>Home</header>
+
+        <div className='body'>
+          <div className='card'>
+            <DataCard/>
+            
+          </div>
+          <button>Previous</button>
+          <button>Next</button>
+
+
+        </div>
+
+      </div>
+    )
+  }
+
+
+
+
+
+
+}
+  
 export default App;

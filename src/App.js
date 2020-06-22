@@ -18,7 +18,8 @@ class App extends Component{
 
   render(){
     return(
-      <div className='Main'>
+      <div>
+        <div className='main'>
         <header>Home</header>
 
         <div className='body'>
@@ -26,12 +27,15 @@ class App extends Component{
             <DataCard/>
             
           </div>
+          <div className='Buttons'>
           <button>Previous</button>
           <button>Next</button>
+          </div>
+          
 
 
         </div>
-
+        </div>
       </div>
     )
   }

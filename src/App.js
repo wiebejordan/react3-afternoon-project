@@ -20,7 +20,9 @@ class App extends Component{
     return(
       <div>
         <div className='main'>
-        <header>Home</header>
+        <header>
+          <h3 className='Home'>Home</h3>
+        </header>
 
         <div className='body'>
           <div className='card'>
@@ -28,8 +30,8 @@ class App extends Component{
             
           </div>
           <div className='Buttons'>
-          <button>Previous</button>
-          <button>Next</button>
+          <button>{'<'} Previous</button>
+          <button>Next {'>'}</button>
           </div>
           
 

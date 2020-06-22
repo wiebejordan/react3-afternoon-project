@@ -1,18 +1,25 @@
 .main{
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(32, 30, 30);
 }
 
 
 header {
   width: 100vw;
   height: 75px;
-  background: lightblue;
+  background: rgb(8, 156, 206);
   box-sizing: border-box;
   text-align: left;
+  display: flex;
   
 }
+  
+ .Home {
+   margin-left: 50px;
+   font-weight: bolder;
+ } 
+
 
 .body {
   width: 100vw;
@@ -27,7 +34,7 @@ header {
 
 .card {
   width: 85%;
-  height: 375px;
+  height: 360px;
   background-color: white;
   
 }
@@ -38,4 +45,13 @@ header {
   justify-content: space-between;
   margin-bottom: 50px;
   margin-top: 15px;
+  
+}
+
+button {
+  border: none;
+  background-color: rgb(32, 30, 30);
+  color: white;
+  font-weight: bold;
+  font-size: larger;
 }

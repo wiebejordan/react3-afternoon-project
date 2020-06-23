@@ -1,14 +1,28 @@
 import React, {Component} from "react";
-import DataFormat from './DataFormat'
+import DataFormat from './DataFormat';
 
 
+class ExtraButtons extends Component{
+  constructor(){
+    super();
+    
+  }
 
-function DataButtons(){
-  return(
-    <div>
-      {DataFormat}
-    </div>
+
+render(){
+  return (
+    <>
+    <button>Edit</button>
+    <button>Delete</button>
+    <button>New</button>
+    </>
   )
 }
 
-export default DataButtons;
+
+
+
+}
+
+
+export default ExtraButtons;

@@ -10,30 +10,15 @@ class DataFormat extends Component{
 
     this.state = {
 
-      person: data[0],
-      personID: 0
+      
     }
     
   } 
 
-componentDidMount(){
-    this.setState({person: data[`${this.state.personID}`]})
-  
-}
-
-
-handleIncrement = () => {
-  this.setState({personID: this.state.personID +1})
-}
-
-handleDecrement = () => {
-  
-  this.setState({personID: this.state.personID -1})
-}
 
 
   render(){
-    const {id, name, city, country, employer, title, favoriteMovies} = this.state.person
+    const {id, name, city, country, employer, title, favoriteMovies} = this.props.person
   return(
     <div>
     <h2 className='id'> {id}/25</h2>

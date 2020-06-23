@@ -26,11 +26,11 @@ class DataFormat extends Component{
       
   <h2 className='name'> {name.first} {name.last}</h2>
 
-    <p className='from'>From: {city}, {country} </p>
+    <p className='from'><strong>From:</strong> {city}, {country} </p>
 
-  <p className='title'>Job Title: {title}</p>
+  <p className='title'><strong>Job Title:</strong> {title}</p>
 
-  <p className='Employer'>Employer: {employer}</p>
+  <p className='employer'><strong>Employer:</strong> {employer}</p>
     
     
 

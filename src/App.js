@@ -28,12 +28,20 @@ componentDidMount(){
   this.getPerson();
 
 }
+stopIncrement = () => {
+  if(this.state.personID === 25){
+    this.setState({personID: 24})
+  }
+}
 
 
 handleIncrement = () => {
-  if(this.state.personID !== this.state.person.length -1)
+  if(this.state.personID > -1){
 this.setState({personID: this.state.personID += 1});
-  this.getPerson();
+  this.getPerson();}
+  else if(this.state.personID <= 24){
+    this.setState({personID: 24})
+  }
   console.log('hit')
 }
 
@@ -62,9 +70,9 @@ this.getPerson();
           <div className='Buttons'>
           
           <button onClick={this.handleDecrement}>{'<'} Previous</button>
-          <div className='extra-buttons'>
-          <ExtraButtons />
-          </div>
+          
+            <  ExtraButtons id='blue-buttons'/>
+          
           <button onClick={this.handleIncrement}>Next {'>'}</button>
           
           

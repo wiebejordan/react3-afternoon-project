@@ -35,7 +35,7 @@ header {
 .card {
   width: 85%;
   height: 360px;
-  background-color: white;
+  background-color: RGB(235, 235, 235);
   
 }
 
@@ -54,4 +54,8 @@ button {
   color: white;
   font-weight: bold;
   font-size: larger;
+}
+
+#blue-buttons{
+  color: blue;
 }

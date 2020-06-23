@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import DataFormat from './DataFormat';
+import './databuttons.css';
 
 
 class ExtraButtons extends Component{
@@ -11,11 +11,11 @@ class ExtraButtons extends Component{
 
 render(){
   return (
-    <>
+    <div id='blue-buttons' >
     <button>Edit</button>
     <button>Delete</button>
     <button>New</button>
-    </>
+    </div>
   )
 }
 

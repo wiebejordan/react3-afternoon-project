@@ -1,16 +1,69 @@
 div{
   box-sizing: border-box;
+  color: rgb(32, 30, 30);
+  position: relative;
+
   
 }
 
 .id {
   text-align: right;
   margin-right: 20px;
-  margin-bottom: px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: -20px;
+  font-weight: 800;
+  
+  
 }
 
 section {
+  box-sizing: border-box;
   margin-left: 60px;
-  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  
+  
+  
+  
 }
 
+.name {
+  text-decoration-line: underline;
+  text-decoration-color: RGB(52, 165, 219);
+  font-weight: 900;
+  font-size: 28px;
+  
+  margin-bottom: 0px;
+  
+}
+
+.from{
+  margin-bottom: -10px;
+}
+
+.title{
+  margin-bottom: -10px;
+}
+
+.employer{
+  margin-bottom: 30px;
+  
+}
+
+.fav-movies-key{
+  margin-bottom: -10px;
+  font-weight: 900;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+strong{
+  font-weight: 900;
+}

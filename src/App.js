@@ -16,7 +16,7 @@ class App extends Component{
       person: data[0],
       personID: 0
   }
-  this.getPerson = this.getPerson.bind(this)
+  
 }
 
 getPerson = () => {
@@ -28,25 +28,17 @@ componentDidMount(){
   this.getPerson();
 
 }
-stopIncrement = () => {
-  if(this.state.personID === 25){
-    this.setState({personID: 24})
-  }
-}
 
 
 handleIncrement = () => {
-  if(this.state.personID > -1){
-this.setState({personID: this.state.personID += 1});
+  if(this.state.personID < 25){
+this.setState({personID: this.state.personID + 1});
   this.getPerson();}
-  else if(this.state.personID <= 24){
-    this.setState({personID: 24})
-  }
-  console.log('hit')
+  
 }
 
 handleDecrement = () => {
-  if(this.state.personID !== -1){
+  if(this.state.personID >= 0){
 this.setState({personID: this.state.personID -1})
 this.getPerson();
   }
@@ -65,8 +57,8 @@ this.getPerson();
         <div className='body'>
           <div className='card'>
             <DataFormat person={this.state.person}/>
-            
           </div>
+          
           <div className='Buttons'>
           
           <button onClick={this.handleDecrement}>{'<'} Previous</button>

@@ -18,10 +18,10 @@ class DataFormat extends Component{
 
 
   render(){
-    const {id, name, city, country, employer, title, favoriteMovies} = this.props.person
+    const { name, city, country, employer, title, favoriteMovies} = this.props.person
   return(
     <div>
-    <h2 className='id'> {id}/25</h2>
+    <h2 className='id'> {this.props.index +1}/25</h2>
     <section>
       
   <h2 className='name'> {name.first} {name.last}</h2>

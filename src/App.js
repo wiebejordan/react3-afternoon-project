@@ -14,13 +14,14 @@ class App extends Component{
     this.state = {
 
       person: data[0],
-      personID: 0
+      index: 0,
+      personID: 1
   }
   
 }
 
 getPerson = () => {
-  this.setState({person: data[`${this.state.personID}`]})
+  this.setState({person: data[`${this.state.index}`]})
 }
 
 
@@ -31,15 +32,18 @@ componentDidMount(){
 
 
 handleIncrement = () => {
-  if(this.state.personID < 25){
-this.setState({personID: this.state.personID + 1});
+  if(this.state.index !== 24){
+
+this.setState({index: this.state.index + 1})
   this.getPerson();}
   
 }
 
 handleDecrement = () => {
-  if(this.state.personID >= 0){
-this.setState({personID: this.state.personID -1})
+  if(this.state.index !== 0){
+
+this.setState({index: this.state.index -1})
+
 this.getPerson();
   }
 }
@@ -56,7 +60,9 @@ this.getPerson();
 
         <div className='body'>
           <div className='card'>
-            <DataFormat person={this.state.person}/>
+            <DataFormat 
+            person={this.state.person}
+            index={this.state.index}/>
           </div>
           
           <div className='Buttons'>
